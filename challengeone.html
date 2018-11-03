@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rubicon QA</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="ch1">
+    <nav class="menu">
+        <li><a href="./challengeone.html">Challenge 1</a></li>
+        <li><a href="./challengetwo.html">Challenge 2</a></li>
+        <li><a href="./challengethree.html">Challenge 3</a></li>
+        <li><a href="./index.html">Example</a></li>
+    </nav>
+    <div class="container group">
+        <span class="title">First challenge</span>
+        <p class="description">Scenario: User follows instructions on screen.
+            On successful completion the user is presented with a modal.</p>
+
+        <section class="group">
+            <p class="description">This needs to be checked.</p>
+            <input type="checkbox" name="ch1-checkbox" id="ch1-checkbox">
+        </section>
+
+        <section class="group">
+            <p class="description">Set this to Java.</p>
+            <select name="language" id="ch1-select">
+                <option value="c#">C#</option>
+                <option value="java">Java</option>
+                <option value="javascript">Javascript</option>
+                <option value="c++">C++</option>
+                <option value="swift">Swift</option>
+            </select>
+        </section>
+
+        <section class="group">
+            <p class="description">Click the button with black text.</p>
+            <div class="horizontal" id="ch1-bg">
+                <button>Click me.</button>
+                <button>Click me.</button>
+                <button>Click me.</button>
+                <button>Click me.</button>
+                <button>Click me.</button>
+            </div>
+        </section>
+
+        <div class="overlay">
+            <img src="./logo.png" id="ch1img">
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="logic.js"></script>
+</body>
+
+</html>
