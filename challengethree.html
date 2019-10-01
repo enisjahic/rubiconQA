@@ -11,27 +11,26 @@
 </head>
 
 <body class="ch1">
-    <nav class="menu">
-        <li><a href="./challengeone.html">Challenge 1</a></li>
-        <li><a href="./challengetwo.html">Challenge 2</a></li>
-        <li><a href="./challengethree.html">Challenge 3</a></li>
-        <li><a href="./index.html">Example</a></li>
-    </nav>
-    <div class="container group">
-        <span class="title">Third challenge</span>
-        <p class="description">Scenario: Confirm that the chart data is correct. Please note that the x-axis labels
-            (dates bellow the chart) are dynamic and represent the last 10 working days. However, the chart bar values
-            will never change and will always be in the same order. </p>
-    </div>
-    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-
-
-    <script src="logic.js"></script>
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
 </body>
 
 </html>
